@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visual POV Boxing — visual novel interattiva. Prima parte: introduzione e primo round contro Victoria Hale.">
+  <title>Visual POV Boxing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game" class="game-shell">
+    <section id="stage" class="stage" aria-label="Scena">
+      <div id="background" class="background"></div>
+      <div class="vignette"></div>
+      <div id="chapter" class="chapter"></div>
+
+      <div id="hud" class="hud hidden">
+        <span id="roundLabel">ROUND 1</span>
+        <span id="sceneLabel">INTRODUZIONE</span>
+      </div>
+
+      <div id="dialogueBox" class="dialogue-box">
+        <div id="speaker" class="speaker"></div>
+        <div id="text" class="text"></div>
+        <div id="choices" class="choices"></div>
+        <button id="continue" class="continue hidden" type="button">Continua ▸</button>
+      </div>
+
+      <button id="startButton" class="start-button" type="button">INIZIA LA STORIA</button>
+      <button id="restartButton" class="restart-button hidden" type="button">Ricomincia</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
